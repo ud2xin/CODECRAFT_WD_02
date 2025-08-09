@@ -137,3 +137,45 @@ body{
     background: #3d5af1;
     color: #ffe066;
 }
+
+@media (max-width: 700px) {
+    .container, .laps {
+        width: 95%;
+        min-width: unset;
+        max-width: 98vw;
+        padding: 10px 0 30px 0;
+    }
+    .timer-display {
+        font-size: 1.2rem;
+        padding: 20px 5px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 98%;
+        margin-top: 30px;
+    }
+    .buttons button {
+        width: 100%;
+        min-width: 0;
+        font-size: 1rem;
+        height: 40px;
+    }
+    .laps {
+        padding: 10px 0 20px 0;
+    }
+    #lap-list {
+        padding: 0 8px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .timer-display {
+        font-size: 0.9rem;
+        padding: 10px 2px;
+    }
+    .laps h3 {
+        font-size: 1rem;
+    }
+}
